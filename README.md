@@ -1,2 +1,2 @@
 # PeduliPangan-Web
-register -sfl on
+index -sfl on
