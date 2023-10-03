@@ -1,0 +1,13 @@
+body{
+    max-width:1250px;
+    max-height: 800px;
+}
+.btn{
+    color: white;
+    background-color: orangered;
+}
+.btn1{
+    color: orangered;
+    border: 1px orangered solid;
+    background-color: white;
+}
