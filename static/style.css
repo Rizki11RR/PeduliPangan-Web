@@ -17,3 +17,46 @@ body{
 .m1{
     margin-right: 40px;
 }
+
+/* Edukasi */
+h3{
+    display: flex; 
+    flex-direction: row; 
+}
+h3::after{
+    content: ""; 
+    flex: 1 1; 
+    border-bottom: 5px solid #000; 
+    margin: auto;
+    margin-left: 10px;
+}
+
+.card-body a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.card{
+    margin: 10px;
+    padding: 0;
+}
+
+.row{
+    justify-content: center;
+}
+
+.article-title, .tips-title, .recipes-title{
+    margin-top: 2rem;
+}
+
+.calculator-info{
+    padding: 10%;
+    background-color: #78C1C4;
+}
+.btn-calculator{
+    width: 10%;
+    background-color: #F57E2E;
+    color: white;
+}
+
+/* Edukasi */
