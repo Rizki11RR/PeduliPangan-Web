@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- my style css -->
+    <style>
+        * {
+            font-family: 'Work Sans', sans-serif;
+        }
+        .login {
+            background-image: url(../rss/background.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        .box-area{
+            width: 930px;
+        }
+        .right-box{
+            padding: 40px 30px 40px 40px;
+        }
+        ::placeholder{
+            font-size: 16px;
+        }
+        @media only screen and (max-width: 768px){
+        .box-area{
+            margin: 0 10px;
+        }
+        .left-box{
+            height: 100px;
+            overflow: hidden;
+        }
+        .right-box{
+            padding: 20px;
+        }
+        }
+        .register{
+            margin-top: 17px 0 50 0;
+        }
+        .login-from {
+            margin-top: 41px 0;
+        }
+    </style>
+    <title>LOGIN</title>
+  </head>
+  <body>
+    <div class="login d-flex justify-content-center align-items-center min-vh-100">
+        <div class="row border rounded-5 p-3 bg-white shadow box-area">
+            <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #E8E0D5;">
+                <div class="img mb-3">
+                    <img src="../rss/img-login.PNG" class="img-fluid" style="width: 250px;">
+                </div>
+            </div>
+            <div class="col-md-6 right-box">
+                <div class="row align-items-center">
+                    <div class="header-text mb-4" style="color: #F57E2E; text-align: center;">
+                        <h2><strong>FORM LOGIN</strong></h2>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Email" class="form-label">Email :</label>
+                        <input type="email" class="form-control" id="Email" placeholder="Masukkan Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Password" class="form-label">Password :</label>
+                        <input type="password" class="form-control" id="Password" placeholder="Masukkan Password">
+                    </div>
+                    <div class="register">
+                        <p>belum punya akun? <a href="/page/registrasi.html">registrasi</a></p>
+                    </div>
+                    <div class="login-form">
+                        <a href="../index.html"><button class="btn btn-main w-100">Login</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
