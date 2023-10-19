@@ -1,366 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Peduli Pangan</title>
 
-    <!-- Mengubungkan ke file css -->
-    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css" /> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../static/style.css">
-    <!-- Fonts inter -->
-    <link
-      href="http://fonts.googleapis.com/css?family=Signika"
-      rel="stylesheet"
-      type="text/css"
-    />
-  </head>
-  <body>
-    <!--navbar-->
-<nav class="navbar navbar-expand-lg center bg-body-tertiary">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peduli Pangan</title>
+
+  <!-- Mengubungkan ke file css -->
+  <!-- <link rel="stylesheet" href="/css/bootstrap.min.css" /> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/style.css">
+  <!-- Fonts inter -->
+  <link href="http://fonts.googleapis.com/css?family=Signika" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="/index.html">
-            <img src="../rss/lgo.svg" alt="Logo" width="150" height="fit-content" class="d-inline-block align-top">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-nav justify-content-end flex-grow-1 ps-1" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item mx-3">
-                    <a class="nav-link" href="/page/Edu.html">Edukasi</a>
-                </li>
-                <li class="nav-item mx-3">
-                    <a class="nav-link" href="/page/event.html">Program</a>
-                </li>
-                <li class="nav-item mx-3">
-                    <a class="nav-link" href="/page/product.html">Produk</a>
-                </li>
-                <li class="nav-item mx-3">
-                    <a class="nav-link" href="/page/comunity.html">Komunitas</a>
-                </li>
-                <li class="nav-item mx-3">
-                    <a class="nav-link" href="/page/about.html">Tentang Kami</a>
-                </li>
+      <a class="navbar-brand" href="/index.html">
+        <img src="../rss/lgo.svg" alt="Logo" width="150" height="fit-content" class="d-inline-block align-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end flex-grow-1 ps-1" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0 mx-3">
+          <li class="nav-item mx-3">
+            <a class="nav-link fw-semibold" href="/page/Edu.html">Edukasi</a>
+          </li>
+          <li class="nav-item mx-3">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-semibold" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Program
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item fw-semibold" href="/page/event.html">Acara</a></li>
+              <li><a class="dropdown-item fw-semibold" href="/page/documentation.html">Dokumentasi</a></li>
             </ul>
-        </div>
-        
-        <div class="">
-          <a href="/page/login.html"><button class="btn btn-outline-main me-2 px-5 ">Masuk</button></a>
-          <a href="/page/registrasi.html"><button class="btn btn-main me-2 px-5">Daftar</button></a>
-        </div>
+          </li>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link active fw-semibold " aria-current="page" href="/page/product.html">Produk</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link fw-semibold" href="/page/comunity.html">Komunitas</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link fw-semibold" href="/page/about.html">Tentang Kami</a>
+          </li>
+        </ul>
+        <a href="/page/login.html"><button class="btn btn-outline-main me-2 px-5 ">Masuk</button></a>
+        <a href="/page/registrasi.html"><button class="btn btn-main me-2 px-5">Daftar</button></a>
+      </div>
     </div>
-</nav>
-    <!-- Carousel -->
-    <div id="carouselBanner" class="carousel slide mb-5" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="5000">
-          <div class="d-block bg-blue h-50 w-100">
-            <h2 class="text-center fw-bold text-light p-5 bg-blue-dark">
-              "Produk Pendukung, makan Sehat, Hemat Uang."
-            </h2>
-            <div class="container col-xxl-8 px-4 py-5">
-              <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                  <img src="../rss/carousel/slides-1.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy"/>
-                </div>
-                <div class="col-lg-6">
-                  <h1 class="display-6 fw-bold lh-1 mb-3 text-light">
-                    Roti Keju paling populer dibuat degan cinta
-                  </h1>
-
-                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-main px-5 me-md-2">
-                      Beli sekarang
-                    </button>
-                  </div>
-                </div>
+  </nav>
+  <!-- Carousel -->
+  <div id="carouselBanner" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <div class="d-block bg-blue h-50 w-100">
+          <h2 class="text-center fw-bold text-light p-5 bg-blue-dark">
+            "Produk Pendukung, makan Sehat, Hemat Uang."
+          </h2>
+          <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="../rss/carousel/slides-1.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                  loading="lazy" />
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <div class="d-block bg-blue h-50 w-100">
-            <h2 class="text-center fw-bold text-light p-5 bg-blue-dark">
-              "Produk Pendukung, makan Sehat, Hemat Uang."
-            </h2>
-            <div class="container col-xxl-8 px-4 py-5">
-              <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                  <img
-                    src="../rss/carousel/slides-1.png"
-                    class="d-block mx-lg-auto img-fluid"
-                    alt="Bootstrap Themes"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="col-lg-6">
-                  <h1 class="display-6 fw-bold lh-1 mb-3 text-light">
-                    Roti Keju paling populer dibuat degan cinta
-                  </h1>
+              <div class="col-lg-6">
+                <h1 class="display-6 fw-bold lh-1 mb-3 text-light">
+                  Roti Keju paling populer dibuat degan cinta
+                </h1>
 
-                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-main px-5 me-md-2">
-                      Beli sekarang
-                    </button>
-                  </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="btn btn-main px-5 me-md-2">
+                    Beli sekarang
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselBanner"
-        data-bs-slide="prev"
-      >
-        <div class="bg-orange-rounded">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+      <div class="carousel-item" data-bs-interval="2000">
+        <div class="d-block bg-blue h-50 w-100">
+          <h2 class="text-center fw-bold text-light p-5 bg-blue-dark">
+            "Produk Pendukung, makan Sehat, Hemat Uang."
+          </h2>
+          <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="../rss/carousel/slides-1.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                  loading="lazy" />
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-6 fw-bold lh-1 mb-3 text-light">
+                  Roti Keju paling populer dibuat degan cinta
+                </h1>
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="btn btn-main px-5 me-md-2">
+                    Beli sekarang
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselBanner"
-        data-bs-slide="next"
-      >
-        <div class="bg-orange-rounded">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </div>
-      </button>
+      </div>
     </div>
-    <!-- /Carousel -->
-
-    <section class="container">
-      <!-- Section Artikel -->
-      <div class="py-lg-5 py-sm-5">
-        <h2 class="fw-semibold text-center">Semua Produk</h2>
-
-        <!-- List Link Topik -->
-
-        <div class="row my-4 row-cols-auto justify-content-center">
-          <button class="btn btn-main text-light px-5 mx-3 my-1">Roti</button>
-
-          <button class="btn btn-secondary-shadow text-dark px-5 mx-3 my-1">
-            Makanan Kemasan
-          </button>
-          <button class="btn btn-secondary-shadow text-dark px-5 mx-3 my-1">
-            Camilan
-          </button>
-          <button class="btn btn-secondary-shadow text-dark px-5 mx-3 my-1">
-            Buku
-          </button>
-          <button class="btn btn-secondary-shadow text-dark px-5 mx-3 my-1">
-            Pakaian
-          </button>
-        </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
+      <div class="bg-orange-rounded">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </div>
-
-      <!-- Artikel gambar kanan -->
-      <div class="container px-4 border border-1 mb-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5">
-          <div class="col-12 col-sm-12 col-lg-7 bg-orange">
-            <img
-              src="../rss/products/product-1-removebg.png"
-              class="d-block mx-lg-auto img-fluid"
-              alt="Bootstrap Themes"
-              alt="Bootstrap Themes"
-              loading="lazy"
-            />
-          </div>
-          <div class="col-lg-5">
-            <h5 class="fw-bold lh-1 text-dark">Roti Bawang</h5>
-            <h5 class="fw-normal mb-1">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
-              reiciendis ipsa perspiciatis ipsum, aliquam nihil dolorum
-              blanditiis recusandae facilis pariatur, sunt illum maxime culpa
-              alias qui praesentium iure nam atque?
-            </h5>
-            <div class="ratings pb-2">
-              <img src="../rss/icons/star.png" alt="" />
-              <img src="../rss/icons/star.png" alt="" />
-              <img src="../rss/icons/star.png" alt="" />
-            </div>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-main px-2 px-lg-5 me-md-2">
-                Beli sekarang
-              </button>
-              <button type="button" class="btn btn-main px-2 px-lg-3 me-md-2">
-                <img src="../rss/icons/add_shopping_cart_white.png" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
+      <div class="bg-orange-rounded">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
       </div>
-      <!-- Artikel 1 -->
-      <div class="container my-4 mb-5">
-        <div
-          class="row flex-sm-row-reverse flex-md-row align-items-center justify-content-start border border-1 gap-5"
-        >
-          <div class="col-12 col-md-7 bg-orange">
-            <img
-              src="../rss/carousel/slides-1.png"
-              class="mx-lg-auto img-fluid w-100"
-              alt="Bootstrap Themes"
-              loading="lazy"
-            />
-          </div>
-          <div class="col-11 col-md-4 my-4 my-md-2">
-            <h5 class="fw-bold lh-1 text-dark">Roti Bawang</h5>
-            <h5 class="fw-normal mb-1">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
-              reiciendis ipsa perspiciatis ipsum, aliquam nihil dolorum
-              blanditiis recusandae facilis pariatur, sunt illum maxime culpa
-              alias qui praesentium iure nam atque?
-            </h5>
-            <h5 class="text-orange pb-3">Rp. 75.000</h5>
-            <div class="ratings pb-2">
-              <img src="../rss/icons/star.png" alt="" />
-              <img src="../rss/icons/star.png" alt="" />
-              <img src="../rss/icons/star.png" alt="" />
-            </div>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button
-                type="button"
-                class="btn btn-outline-main-w px-2 px-lg-3 me-md-2"
-              >
-                <img src="../rss/icons/add_shopping_cart.png" alt="" />
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-main px-2 px-lg-5 me-md-2"
-              >
-                Beli sekarang
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+    </button>
+  </div>
+  <!-- /Carousel -->
 
-      <!-- Artikel gambar kanan -->
-      <div class="container px-4 border border-1 mb-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5">
-          <div class="col-12 col-sm-12 col-lg-7 bg-orange">
-            <img
-              src="../rss/carousel/slides-1.png"
-              class="d-block mx-lg-auto img-fluid"
-              alt="Bootstrap Themes"
-              alt="Bootstrap Themes"
-              loading="lazy"
-            />
-          </div>
-          <div class="col-lg-5">
-            <h5 class="fw-bold lh-1 text-dark">Roti Bawang</h5>
-            <h5 class="fw-normal mb-1">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
-              reiciendis ipsa perspiciatis ipsum, aliquam nihil dolorum
-              blanditiis recusandae facilis pariatur, sunt illum maxime culpa
-              alias qui praesentium iure nam atque?
-            </h5>
-            <div class="ratings pb-2">
-              <img src="../rss/icons/star.png" alt="" />
-              <img src="../rss/icons/star.png" alt="" />
-              <img src="../rss/icons/star.png" alt="" />
-            </div>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button
-                type="button"
-                class="btn btn-outline-main-w px-2 px-lg-3 me-md-2"
-              >
-                <img src="../rss/icons/add_shopping_cart.png" alt="" />
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-main px-2 px-lg-5 me-md-2"
-              >
-                Beli sekarang
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+  <section class="container">
+    <!-- Section Artikel -->
+    <div class="py-lg-5 py-sm-5">
+      <h2 class="fw-semibold text-center">Semua Produk</h2>
 
-      <div class="row">
-        <a
-          href="#"
-          class="text-end text-orange text-decoration-none fw-bold fs-5"
-          >Lihat Semua</a
-        >
-      </div>
+      <!-- List Link Topik -->
 
-      <!-- /Section Artikel -->
-    </section>
+      <div class="row my-4 row-cols-auto justify-content-center">
+        <button class="btn btn-main text-light px-5 mx-3 my-1">Roti</button>
 
-    <!-- Footer -->
-    <div class="container">
-      <footer class="row py-5 my-5 border-top">
-        <div class="col-5 mb-3">
-          <p class="text-muted">
-            Jl. Panembahan Senopati, Ngupasan. Kec. Gondomanan, Kota Yokyakarta,
-            Daerah Istimewa Yokyakarta
-          </p>
-        </div>
-        <div class="col-1"></div>
-
-        <div class="col-2 mb-3">
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Tentang Kami</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Mitra</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Kontak</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-2 mb-3">
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Facebook</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Twitter</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Linkedin</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Instagram</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-2 mb-3">
-          <a href="#"><img src="../rss/icons/Up_arrow.png" alt="" /></a>
-        </div>
-      </footer>
-      <div class="row">
-        <div class="col-7"></div>
-        <div class="col-5 text-muted">
-          © 2023 Deadliners. All rights reserved.
-        </div>
-      </div>
-      <div class="text-muted py-5 text-decoration-underline">088372837283</div>
-      <div class="text-muted text-decoration-underline mb-3">
-        pedulipangan@gmail.com
+        <button class="btn btn-secondary-shadow text-dark px-5 mx-3 my-1">
+          Makanan Kemasan
+        </button>
+        <button class="btn btn-secondary-shadow text-dark px-5 mx-3 my-1">
+          Camilan
+        </button>
+        <button class="btn btn-secondary-shadow text-dark px-5 mx-3 my-1">
+          Buku
+        </button>
+        <button class="btn btn-secondary-shadow text-dark px-5 mx-3 my-1">
+          Pakaian
+        </button>
       </div>
     </div>
 
-    <!-- /Footer -->
+    <!-- Artikel gambar kanan -->
+    <div class="container px-4 border border-1 mb-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5">
+        <div class="col-12 col-sm-12 col-lg-7 bg-orange">
+          <img src="../rss/products/product-1-removebg.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+            alt="Bootstrap Themes" loading="lazy" />
+        </div>
+        <div class="col-lg-5">
+          <h5 class="fw-bold lh-1 text-dark">Roti Bawang</h5>
+          <h5 class="fw-normal mb-1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            reiciendis ipsa perspiciatis ipsum, aliquam nihil dolorum
+            blanditiis recusandae facilis pariatur, sunt illum maxime culpa
+            alias qui praesentium iure nam atque?
+          </h5>
+          <div class="ratings pb-2">
+            <img src="../rss/icons/star.png" alt="" />
+            <img src="../rss/icons/star.png" alt="" />
+            <img src="../rss/icons/star.png" alt="" />
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="checkout.html"><button type="button" class="btn btn-main px-2 px-lg-5 me-md-2">
+              Beli sekarang
 
-    <!-- script -->
-    <!-- <script src="/js/bootstrap.bundle.min.js"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script></body>
-  </body>
+            </button></a>
+            <button type="button" class="btn btn-main px-2 px-lg-3 me-md-2">
+              <img src="../rss/icons/add_shopping_cart_white.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Artikel 1 -->
+    <div class="container my-4 mb-5">
+      <div class="row flex-sm-row-reverse flex-md-row align-items-center justify-content-start border border-1 gap-5">
+        <div class="col-12 col-md-7 bg-orange">
+          <img src="../rss/carousel/slides-1.png" class="mx-lg-auto img-fluid w-100" alt="Bootstrap Themes"
+            loading="lazy" />
+        </div>
+        <div class="col-11 col-md-4 my-4 my-md-2">
+          <h5 class="fw-bold lh-1 text-dark">Roti Bawang</h5>
+          <h5 class="fw-normal mb-1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            reiciendis ipsa perspiciatis ipsum, aliquam nihil dolorum
+            blanditiis recusandae facilis pariatur, sunt illum maxime culpa
+            alias qui praesentium iure nam atque?
+          </h5>
+          <h5 class="text-orange pb-3">Rp. 75.000</h5>
+          <div class="ratings pb-2">
+            <img src="../rss/icons/star.png" alt="" />
+            <img src="../rss/icons/star.png" alt="" />
+            <img src="../rss/icons/star.png" alt="" />
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-outline-main-w px-2 px-lg-3 me-md-2">
+              <img src="../rss/icons/add_shopping_cart.png" alt="" />
+            </button>
+            <a href="checkout.html"><button type="button" class="btn btn-outline-main px-2 px-lg-5 me-md-2">
+              Beli sekarang
+            </button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Artikel gambar kanan -->
+    <div class="container px-4 border border-1 mb-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5">
+        <div class="col-12 col-sm-12 col-lg-7 bg-orange">
+          <img src="../rss/carousel/slides-1.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+            alt="Bootstrap Themes" loading="lazy" />
+        </div>
+        <div class="col-lg-5">
+          <h5 class="fw-bold lh-1 text-dark">Roti Bawang</h5>
+          <h5 class="fw-normal mb-1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            reiciendis ipsa perspiciatis ipsum, aliquam nihil dolorum
+            blanditiis recusandae facilis pariatur, sunt illum maxime culpa
+            alias qui praesentium iure nam atque?
+          </h5>
+          <div class="ratings pb-2">
+            <img src="../rss/icons/star.png" alt="" />
+            <img src="../rss/icons/star.png" alt="" />
+            <img src="../rss/icons/star.png" alt="" />
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-outline-main-w px-2 px-lg-3 me-md-2">
+              <img src="../rss/icons/add_shopping_cart.png" alt="" />
+            </button>
+            <a href="checkout.html"><button type="button" class="btn btn-outline-main px-2 px-lg-5 me-md-2">
+              Beli sekarang
+            </button></a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <a href="#" class="text-end text-orange text-decoration-none fw-bold fs-5">Lihat Semua</a>
+    </div>
+
+    <!-- /Section Artikel -->
+  </section>
+
+  <!-- Footer -->
+  <div class="container">
+    <footer class="row py-5 mt-5 border-top">
+      <div class="col-5 mb-3">
+        <p class="text-muted">
+          Jl. Panembahan Senopati, Ngupasan. Kec. Gondomanan, Kota Yokyakarta,
+          Daerah Istimewa Yokyakarta
+        </p>
+      </div>
+      <div class="col-1"></div>
+
+      <div class="col-2">
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Tentang Kami</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Mitra</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Kontak</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Facebook</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Twitter</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Linkedin</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <a href="#"><img src="../rss/icons/Up_arrow.png" alt="" /></a>
+      </div>
+    </footer>
+    <div class="row">
+      <div class="col-7"></div>
+      <div class="col-5 text-muted">
+        © 2023 Deadliners. All rights reserved.
+      </div>
+    </div>
+    <div class="text-muted text-decoration-underline">088372837283</div>
+    <div class="text-muted text-decoration-underline mb-3">
+      pedulipangan@gmail.com
+    </div>
+  </div>
+  <!-- Footer -->
+
+  <!-- script -->
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+</body>
+
 </html>
