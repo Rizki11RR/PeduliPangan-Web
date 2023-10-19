@@ -1,51 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/static/style.css">
-</head>
-<body>
-<!--navbar-->
-<nav class="navbar navbar-expand-lg center bg-body-tertiary">
-    <div class="container">
-        <a class="navbar-brand" href="/index.html">
-            <img src="../rss/lgo.svg" alt="Logo" width="150" height="fit-content" class="d-inline-block align-top">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-nav justify-content-end flex-grow-1 ps-1" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item mx-3">
-                    <a class="nav-link" href="/page/Edu.html">Edukasi</a>
-                </li>
-                <li class="nav-item mx-3">
-                    <a class="nav-link" href="/page/event.html">Program</a>
-                </li>
-                <li class="nav-item mx-3">
-                    <a class="nav-link" href="/page/product.html">Produk</a>
-                </li>
-                <li class="nav-item mx-3">
-                    <a class="nav-link" href="/page/comunity.html">Komunitas</a>
-                </li>
-                <li class="nav-item mx-3">
-                    <a class="nav-link" href="/page/about.html">Tentang Kami</a>
-                </li>
-            </ul>
-        </div>
-        
-        <div class="">
-            <a href="/page/login.html"><button class="btn btn-outline-main me-2 px-5 ">Masuk</button></a>
-            <a href="/page/registrasi.html"><button class="btn btn-main me-2 px-5">Daftar</button></a>
-        </div>
-    </div>
-</nav>
-<div class="container text-center">
-    <h1 class="display-5 fw-bold text-center">Program</h1>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script></body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="/index.html">
+        <img src="../rss/lgo.svg" alt="Logo" width="150" height="fit-content" class="d-inline-block align-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end flex-grow-1 ps-1" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0 mx-3">
+          <li class="nav-item mx-3">
+            <a class="nav-link fw-semibold " href="/page/Edu.html">Edukasi</a>
+          </li>
+          <li class="nav-item mx-3">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active fw-semibold " aria-current="page" href="#" id="navbarDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Program
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item fw-semibold" href="/page/event.html">Acara</a></li>
+              <li><a class="dropdown-item fw-semibold" href="/page/documentation.html">Dokumentasi</a></li>
+            </ul>
+          </li>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link fw-semibold" href="/page/product.html">Produk</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link fw-semibold" href="/page/comunity.html">Komunitas</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link fw-semibold" href="/page/about.html">Tentang Kami</a>
+          </li>
+        </ul>
+        <a href="/page/login.html"><button class="btn btn-outline-main me-2 px-5 ">Masuk</button></a>
+        <a href="/page/registrasi.html"><button class="btn btn-main me-2 px-5">Daftar</button></a>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+  <!-- Hero -->
+  <div class="hero-title text-center bg-image" style="
+      background-image: url(../rss/event/Background\ event.webp);
+      height: 50vh; background-repeat: no-repeat;
+        background-size: cover;
+      ">
+    <div class="mask" style="background-color: rgba(255, 255, 255, 0.2); height: 50vh;">
+      <div class="d-flex align-items-center justify-content-center">
+        <div class="text-white title">
+          <h1 class="fw-bold">Yang Akan Datang</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Hero -->
+  <div class="container">
+    <div class="event">
+      <div class="blog-home2 py-5">
+        <div class="container">
+          <!-- Row  -->
+          <div class="row justify-content-center">
+            <!-- Column -->
+            <div class="col-md-8 text-center">
+              <h6 class="subtitle font-weight-normal">Jangan ketinggalan event-event yang akan datang. <br>
+                Pilihlah sesuai dengan minat Anda dan silahkan hadir di kota terdekat Anda.</h6>
+            </div>
+            <!-- Column -->
+            <!-- Column -->
+          </div>
+          <div class="row mt-4">
+            <!-- Column -->
+            <div class="col-md-4 on-hover">
+              <div class="card border-3 border-dark mb-4">
+                <a href="#"><img class="card-img-top"
+                    src="../rss/event/image 35.png"
+                    alt=""></a>
+                <div
+                  class="date-pos ms-0 bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  Nov<span class="d-block">08</span></div>
+                <span class='badge badge-secondary ms-3 mt-2'>Workshop</span>
+                <h5 class="fw-bold px-3 mt-1"><a href="#" class="text-decoration-none link">Strategies to Reduce Food Waste</a></h5>
+                <p class="mt-1 px-3">Workshop untuk sharing dan belajar cara-cara mengurangi limbah makanan sisa</p>
+              </div>
+            </div>
+            <!-- Column -->
+            <div class="col-md-4 on-hover">
+              <div class="card border-3 border-dark mb-4">
+                <a href="#"><img class="card-img-top"
+                    src="../rss/event/image 36.png"
+                    alt=""></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  Nov<span class="d-block">1</span></div>
+                <span class='badge badge-secondary ms-3 mt-2'>Bakti Sosial</span>
+                <h5 class="fw-bold px-3 mt-1"><a href="#" class="text-decoration-none link">1000 Porsi Makanan Untuk Anak Jalanan</a></h5>
+                <p class="mt-1 px-3">Kegiatan berbagi makanan kepada anak jalanan di sekitar kota Tanggerang</p>
+              </div>
+            </div>
+            <!-- Column -->
+            <div class="col-md-4 on-hover">
+              <div class="card border-3 border-dark mb-4">
+                <a href="#"><img class="card-img-top"
+                    src="../rss/event/image 35 (1).png"
+                    alt=""></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  Oct<span class="d-block">23</span></div>
+                <span class='badge badge-secondary ms-3 mt-2'>Edukasi</span>
+                <h5 class="fw-bold px-3 mt-1"><a href="#" class="text-decoration-none link">PeduliPangan Goes to School</a></h5>
+                <p class="mt-1 px-3 mb-4">Sosialisasi dari PeduliPangan ke sekolah-sekolah diBekasi mengenai pengurangan Food Waste</p>
+              </div>
+            </div>
+            <div class="col-md-4 on-hover">
+              <div class="card border-3 border-dark mb-4">
+                <a href="#"><img class="card-img-top"
+                    src="../rss/event/image 36 (1).png"
+                    alt="wrappixel kit"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  Oct<span class="d-block">10</span></div>
+                <span class='badge badge-secondary ms-3 mt-2'>Workshop</span>
+                <h5 class="fw-bold px-3 mt-1"><a href="#" class="text-decoration-none link">Pelatihan pembuatan Pupuk Kompos</a></h5>
+                <p class="mt-1 px-3">Menyediakan dukungan teknis dan peralatan untuk membantu warga memproduksi pupuk kompos</p>
+              </div>
+            </div>
+            <div class="col-md-4 on-hover">
+              <div class="card border-3 border-dark mb-4">
+                <a href="#"><img class="card-img-top"
+                    src="../rss/event/children-food-waste-workshops-freegan-pony-1200x900-cropped.jpg"
+                    alt=""></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  Oct<span class="d-block">29</span></div>
+                <span class='badge badge-secondary ms-3 mt-2'>Edukasi</span>
+                <h5 class="fw-bold px-3 mt-1"><a href="#" class="text-decoration-none link">Edukasi Food Waste pada Anak-Anak</a></h5>
+                <p class="mt-1 px-3">PeduliPangan memberikan edukasi mengenai pengolahan food waste pada anak-anak</p>
+              </div>
+            </div>
+            <div class="col-md-4 on-hover">
+              <div class="card border-3 border-dark mb-4">
+                <a href="#"><img class="card-img-top"
+                    src="../rss/event/donation.jpg"
+                    alt=""></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  Oct<span class="d-block">20</span></div>
+                <span class='badge badge-secondary ms-3 mt-2'>Bakti Sosial</span>
+                <h5 class="fw-bold px-3 mt-1"><a href="#" class="text-decoration-none link">Penyaluran donasi kepada fakir miskin</a></h5>
+                <p class="mt-1 px-3">peduliPangan mendistribusikan donasi makanan pada fakir miskin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div class="container">
+    <footer class="row py-5 mt-5 border-top">
+      <div class="col-5 mb-3">
+        <p class="text-muted">
+          Jl. Panembahan Senopati, Ngupasan. Kec. Gondomanan, Kota Yokyakarta,
+          Daerah Istimewa Yokyakarta
+        </p>
+      </div>
+      <div class="col-1"></div>
+
+      <div class="col-2">
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Tentang Kami</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Mitra</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Kontak</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Facebook</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Twitter</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Linkedin</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <a href="#"><img src="../rss/icons/Up_arrow.png" alt="" /></a>
+      </div>
+    </footer>
+    <div class="row">
+      <div class="col-7"></div>
+      <div class="col-5 text-muted">
+        © 2023 Deadliners. All rights reserved.
+      </div>
+    </div>
+    <div class="text-muted text-decoration-underline">088372837283</div>
+    <div class="text-muted text-decoration-underline mb-3">
+      pedulipangan@gmail.com
+    </div>
+  </div>
+  <!-- Footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
