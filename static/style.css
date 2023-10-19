@@ -1,9 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;500;800&family=Lato:wght@300;400;900&display=swap');
+
+:root {
+    --background: #3a3b3f;
+    --second: #ff9900;
+    --third: #505156;
+    --text : white;
+  }
+
 body{
     /* max-width:1250px; */
     max-height: 800px;
 }
 *{
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 .p-k{
    margin-inline: 30px;
@@ -14,11 +24,35 @@ body{
 a{
     text-decoration: none;
 }
+
+/* navbar */
+nav ul li a{
+    color: var(--text);
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+nav ul li a::after{
+    content: "";
+    display: block;
+    border-bottom: 0.4rem solid #F57E2E;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+nav ul li a:hover::after{
+    transform: scaleX(1);
+}
+/* navbar */
+
 /* Beranda */
 .program {
     height: 100vh;
     background-color: #F57E2E ;
     margin-top: 0;
+}
+.card-berita{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .header h2 {
     height: 50;
@@ -37,31 +71,53 @@ a{
 }
 .donasi .uang {
     border: none;
-    color: white;
     width: 331px;
     height: 42px;
+    color: #F57E2E;
     margin-top: 54px 0 21 0;
     border-radius: 15px;
-    background: #3ea8abcc;
-
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .donasi .makanan {
     border: none;
-    color: white;
     width: 331px;
     height: 42px;
+    color: #F57E2E;
     margin-top: 21px 0 0 0;
     border-radius: 15px;
-    background: rgba(62, 168, 171, 0.80);
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fa-star{
+    color: #FFD700;
+}
+
+.card-testimoni{
+    height: 65vh;
 }
 /* Beranda */
 
 /* Edukasi */
-.article-title{
-    display: flex; 
-    flex-direction: row; 
-}
+
 .article-title::after{
+    content: ""; 
+    flex: 1 1; 
+    border-bottom: 5px solid #000; 
+    margin: auto;
+    margin-left: 10px;
+}
+
+.tips-title::after{
+    content: ""; 
+    flex: 1 1; 
+    border-bottom: 5px solid #000; 
+    margin: auto;
+    margin-left: 10px;
+}
+
+.recipes-title::after{
     content: ""; 
     flex: 1 1; 
     border-bottom: 5px solid #000; 
@@ -75,6 +131,7 @@ a{
     color: black;
 }
 .card{
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 10px;
     padding: 0;
 }
@@ -85,6 +142,8 @@ a{
 
 .article-title, .tips-title, .recipes-title{
     margin-top: 2rem;
+    display: flex; 
+    flex-direction: row; 
 }
 
 .calculator-info{
@@ -97,8 +156,128 @@ a{
     color: white;
 }
 
+.ingredient{
+    background-color: #ECF6F6;
+    padding: 2% 10% 10%;
+}
+.recipes-details{
+    background-color: #ECF6F6;
+}
+
+.list-ingredients li, .steps-list li{
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.recipes-details{
+    font-size: 25px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Mengatur dua kolom setara */
+    grid-template-rows: auto auto; /* Menggunakan ukuran baris otomatis */
+    gap: 10px;
+}
+.time{
+    grid-column: 1;
+}
+.result{
+    grid-column: 2;
+}
+.dificullity{
+    grid-column: 1 / span 2;
+}
+.steps{
+    text-decoration: underline;
+}
 /* Edukasi */
 
+/* event */
+.title h1{
+    margin-top: 20vh;
+}
+.badge-secondary {
+    background-color: transparent!important;
+    border: 1px solid #aaa;
+    color: #777!important;
+    width: 20%;
+}
+
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+.blog-home2 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+}
+
+.blog-home2 h1,
+.blog-home2 h2,
+.blog-home2 h3,
+.blog-home2 h4,
+.blog-home2 h5,
+.blog-home2 h6 {
+  color: #3e4555;
+}
+
+.blog-home2 .font-weight-medium {
+  font-weight: 500;
+}
+
+.blog-home2 .bg-light {
+  background-color: #f4f8fa !important;
+}
+
+.blog-home2 .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+}
+
+.blog-home2 .text-themecolor {
+  color: #316ce8;
+}
+
+.blog-home2 h5 {
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.blog-home2 a.link {
+  color: #3e4555;
+}
+
+.blog-home2 a.link:hover {
+  color: #316ce8;
+}
+
+.on-hover {
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.on-hover:hover {
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.blog-home2 .date-pos {
+  right: 10px;
+  top: 10px;
+}
+
+.blog-home2 .date-pos span {
+  font-size: 30px;
+  line-height: 30px;
+}
+.blog-home2 .bg-info-gradiant {
+    background: #188ef4;
+    background: -webkit-linear-gradient(legacy-direction(to right), #188ef4 0%, #316ce8 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#188ef4), to(#316ce8));
+    background: -webkit-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+    background: -o-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+    background: linear-gradient(to right, #188ef4 0%, #316ce8 100%);
+}
+/* event */
 
 /* Produk */
 .bg-blue {
@@ -127,21 +306,15 @@ a{
 
 /* Rating */
 
-
 .btn-main {
     --bs-btn-color: #fff;
     --bs-btn-bg: #F57E2E;
     --bs-btn-border-color: #F57E2E;
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #db7029;
-    --bs-btn-hover-border-color: #146c43;
     --bs-btn-focus-shadow-rgb: 60, 153, 110;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #146c43;
-    --bs-btn-active-border-color: #13653f;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #198754;
     --bs-btn-disabled-border-color: #198754
 }
 
@@ -179,6 +352,10 @@ a{
     --bs-gradient: none
 }
 
+.bg-dark-1 {
+    background-color: #D9D9D9 !important;
+}
+
 .btn-secondary-shadow {
     --bs-btn-color: #F57E2E;
     --bs-btn-border-color: #fff;
@@ -198,4 +375,214 @@ a{
     -webkit-box-shadow: -2px 6px 57px 5px rgba(0, 0, 0, 0.24);
     -moz-box-shadow: -2px 6px 57px 5px rgba(0, 0, 0, 0.24);
 }
+.funkyradio div {
+    clear: both;
+    overflow: hidden;
+  }
+  
+  .funkyradio label {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #D1D3D4;
+    font-weight: normal;
+  }
+  
+  .funkyradio input[type="radio"]:empty,
+  .funkyradio input[type="checkbox"]:empty {
+    display: none;
+  }
+  
+  .funkyradio input[type="radio"]:empty ~ label,
+  .funkyradio input[type="checkbox"]:empty ~ label {
+    position: relative;
+    line-height: 2.5em;
+    text-indent: 3.25em;
+    margin-top: 2em;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  
+  .funkyradio input[type="radio"]:empty ~ label:before,
+  .funkyradio input[type="checkbox"]:empty ~ label:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 2.5em;
+    background: #D1D3D4;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .funkyradio input[type="radio"]:hover:not(:checked) ~ label,
+  .funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
+    color: #888;
+  }
+  
+  .funkyradio input[type="radio"]:hover:not(:checked) ~ label:before,
+  .funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
+    content: '\2714';
+    text-indent: .9em;
+    color: #C2C2C2;
+  }
+  
+  .funkyradio input[type="radio"]:checked ~ label,
+  .funkyradio input[type="checkbox"]:checked ~ label {
+    color: #777;
+  }
+  
+  .funkyradio input[type="radio"]:checked ~ label:before,
+  .funkyradio input[type="checkbox"]:checked ~ label:before {
+    content: '\2714';
+    text-indent: .9em;
+    color: #333;
+    background-color: #ccc;
+  }
+  
+  .funkyradio input[type="radio"]:focus ~ label:before,
+  .funkyradio input[type="checkbox"]:focus ~ label:before {
+    box-shadow: 0 0 0 3px #999;
+  }
+  
+  .funkyradio-default input[type="radio"]:checked ~ label:before,
+  .funkyradio-default input[type="checkbox"]:checked ~ label:before {
+    color: #333;
+    background-color: #F57E2E;
+  }
+  
+  /* checkout */
+  .outline-input{
+    /* round the corners */
+    background-color: white;
+    border: 1px solid;
+    color: #CCC;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;    
+}
+
+.outline-input:focus { 
+    outline:none;
+    border: 1px solid #F57E2E; 
+    /* create a BIG glow */
+    box-shadow: 0px 0px 5px #F57E2E; 
+    -moz-box-shadow: 0px 0px 5px #F57E2E;
+    -webkit-box-shadow: 0px 0px 5px #F57E2E;  
+}
+  /* checkout */
 /* Produk */
+
+/* Distribution */
+section {
+    padding: 80px 18%;
+}
+
+.banner {
+    width: auto;
+    height: 318px;
+    background-image: url(../rss/distribusi/distribusi1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-text p {
+    width: 336px;
+    color: #FFF;
+    font-size: 20px;
+    line-height: normal;
+}
+
+.banner-text h3 {
+    display: flex;
+    width: 527px;
+    height: 61px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.image {
+    position: relative;
+}
+
+.btn-title {
+    position: absolute;
+    padding: 3%;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+    background-color: #F57E2E;
+    border-radius: 16px;
+    border: none;
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+/* Distribution */
+
+
+/* Community */
+.card-comment{
+    border-radius: 20px;
+    background-color: #FAFAFA;
+}
+.forum{
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* Donasi */
+
+.text-custom{
+    color: #F57E2E !important;
+}
+.text-custom:hover{
+    color: #F57E2E ;
+}
+
+button .nav-link{
+    color: #F57E2E;
+}
+.text-custom{
+    color: #F57E2E;
+}
+.nav.nav-pills {
+  padding-bottom: 25px;
+}
+
+.form-group input[type="checkbox"] {
+  display: none;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span {
+  width: 20px;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span:first-child {
+  display: none;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span:last-child {
+  display: inline-block;
+}
+
+.form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
+  display: inline-block;
+}
+
+.form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
+  display: none;
+}
+
+/* Donasi */
